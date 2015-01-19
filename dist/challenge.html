@@ -6,18 +6,16 @@
 </head>
 
 <body>
-<div class="contents" ng-controller="ClientListctrl" ng-repeat="item in clients">
+<div class="contents" ng-controller="ClientListctrl">
 	
-     
-    <div class="client photo">
-    <p><img ng-src="images/{{item.nickname}}_photo.jpg" alt ="{{clients.name}}"></p>
-    </div>
-	<div class="client info">
+<ul>
+    <li ng-repeat="item in clients">
+     <p><img ng-src="images/{{item.nickname}}_photo.jpg" alt ="{{item.name}}"></p>
 		<p>Name: {{item.name}}</p>
 		<p>Address: {{item.address}}</p>
 		<p>Phone: {{item.phone}}</p>      
-	</div>		
-
+    </li>
+</ul>
 </div>
   
 </body>
