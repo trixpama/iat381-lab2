@@ -21,6 +21,6 @@ ClientList.controller('ClientListctrl', function ClientListctrl($scope) {
      'nickname': 'Dar',
      'address': '6902 Parker Road',
  	 'phone': '(591) 358-4454'}
-   
   ];
+  
 });
