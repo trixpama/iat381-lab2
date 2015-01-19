@@ -1,12 +1,26 @@
-var phonecatApp = angular.module('phonecatApp', []);
+var ClientList = angular.module('ClientList', []);
 
-phonecatApp.controller('PhoneListCtrl', function ($scope) {
-  $scope.phones = [
-    {'name': 'Nexus S',
-     'snippet': 'Fast just got faster with Nexus S.'},
-    {'name': 'Motorola XOOM™ with Wi-Fi',
-     'snippet': 'The Next, Next Generation tablet.'},
-    {'name': 'MOTOROLA XOOM™',
-     'snippet': 'The Next, Next Generation tablet.'}
+ClientList.controller('ClientListctrl', function ($scope) {
+  $scope.clients = [
+    {'name': 'Eugene Cunningham',
+     'nickname': 'Eugene',
+     'address': '7963 W Lone Mountain Road',
+ 	 'phone': '(636) 927-1964'},
+
+ 	{'name': 'Alberto Fleming',
+     'nickname': 'Bert',
+     'address': '7083 Watika Street',
+ 	 'phone': '(591) 277-5042'},
+
+	{'name': 'Wanda Harris',
+     'nickname': 'Wanda',
+     'address': '4205 Crescent Canyon Street',
+ 	 'phone': '(647) 684-7504'},
+
+ 	 {'name': 'Darlene Steward',
+     'nickname': 'Dar',
+     'address': '6902 Parker Road',
+ 	 'phone': '(591) 358-4454'}
+   
   ];
 });
