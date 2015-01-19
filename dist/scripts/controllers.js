@@ -1,6 +1,6 @@
 var ClientList = angular.module('ClientList', []);
 
-ClientList.controller('ClientListctrl', function ($scope) {
+ClientList.controller('ClientListctrl', function ClientListctrl($scope) {
   $scope.clients = [
     {'name': 'Eugene Cunningham',
      'nickname': 'Eugene',
